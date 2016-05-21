@@ -20,7 +20,6 @@ SELECT has_function_privilege('pgr_version()', 'execute');
 
 -- postgis_topology;
 SELECT 1/count(*) FROM pg_extension WHERE extname = 'postgis_topology';
-SELECT has_function_privilege('postgis_topology_scripts_installed()', 'execute');
 
 -- fuzzystrmatch;
 SELECT 1/count(*) FROM pg_extension WHERE extname = 'fuzzystrmatch';
