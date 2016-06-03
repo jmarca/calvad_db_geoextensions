@@ -2,12 +2,14 @@
   "name": "calvad_db_geoextensions",
   "version": "1.0.0",
   "description": "use Sqitch to deploy a standard set of geo extensions to postgresql",
-  "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "pgtap"
+      "test": "pgtap"
+      ,"install" : "sqitch deploy"
+      ,"uninstall" : "sqitch revert"
+      ,"preinstall": "sqitch target add osm db:pg:${npm_package_config_target_db} && sqitch engine add pg osm"
   },
   "repository": {
     "type": "git",
