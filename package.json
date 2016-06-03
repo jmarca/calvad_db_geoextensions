@@ -1,0 +1,22 @@
+{
+  "name": "calvad_db_geoextensions",
+  "version": "1.0.0",
+  "description": "use Sqitch to deploy a standard set of geo extensions to postgresql",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "pgtap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmarca/calvad_db_geoextensions.git"
+  },
+  "author": "James E. Marca",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/jmarca/calvad_db_geoextensions/issues"
+  },
+  "homepage": "https://github.com/jmarca/calvad_db_geoextensions#readme"
+}
