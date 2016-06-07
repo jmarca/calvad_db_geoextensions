@@ -7,9 +7,8 @@
   },
   "scripts": {
       "test": "pgtap"
-      ,"install" : "sqitch deploy"
+      ,"install" : "sqitch deploy ${SQITCH_DB_URI}"
       ,"uninstall" : "sqitch revert"
-      ,"preinstall": "sqitch target add osm db:pg:${npm_package_config_target_db} && sqitch engine add pg osm"
   },
   "repository": {
     "type": "git",
