@@ -7,8 +7,8 @@
   },
   "scripts": {
       "test": "pgtap"
-      ,"install" : "echo  ${SQITCH_DB_URI} && sqitch deploy ${SQITCH_DB_URI}"
-      ,"uninstall" : "sqitch revert"
+      ,"install" : "sqitch deploy ${SQITCH_DB_URI}"
+      ,"preuninstall" : "sqitch revert  ${SQITCH_DB_URI}"
   },
   "repository": {
     "type": "git",
