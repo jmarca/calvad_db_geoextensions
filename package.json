@@ -9,6 +9,7 @@
       "test": "pgtap"
       ,"sqitch:deploy":"sqitch deploy ${SQITCH_DB_URI}"
       ,"sqitch:revert":"sqitch revert ${SQITCH_DB_URI}"
+      ,"install":"SQITCH_DB_URI=${SQITCH_DB_URI:-$npm_package_config_targetdb} npm run sqitch:deploy"
   },
   "repository": {
     "type": "git",

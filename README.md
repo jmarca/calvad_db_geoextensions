@@ -10,3 +10,11 @@ sqitch deploy
 ```
 
 But I'm working on using npm instead.
+
+# using npm
+
+to use NPM to install, do something like:
+
+```
+SQITCH_DB_URI="db:pg:mydb" npm install
+```
